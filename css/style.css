@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*common css*/
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+body{
+    font-family: 'Lobster', cursive;
+}
+header{
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background-color: aqua;
+}
+.navbar-nav li a{
+     color: #333;
+     text-transform: capitalize;
+     font-size: 16px;
+     font-weight: 600;
+}
+.navbar-brand {
+    border: solid black;
+    padding: 12px 13px;
+    text-transform: uppercase;
+    
+}
+.banner-area{
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    z-index: 8;
+    height: 100vh;
+}
+.banner h1{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+.banner h5{
+    font-family: 'Lobster', cursive;
+}
+.banner-area .btn-box{
+    background-color: aqua;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding:10px 30px ;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+.about-area .btn-box{
+    background-color: aqua;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding:10px 30px ;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+.about-content h3{
+    color: #ff3636;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 26px;
+    padding-bottom:10px ;
+}
+.about-content ul{
+    width: 30%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    margin-bottom: 25px;
+}
+.about-content ul li{
+    text-transform: capitalize;
+}
+.services-area{
+    background-color: cyan;
+}
+.section-title h4{
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+}
+.section-title ::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #ff3636;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-title ::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff3636;
+    border-radius: 50%;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-title{
+    margin-bottom: 60px;
+}
+.single-service{ 
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+}
+.single-service i{ 
+    width: 15px;
+    height: 80px;
+    background-color: #ff3636;
+    padding: 30px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 5px;
+    border: 1px soid #ddd;
+    margin-bottom: 30px;
+    transition: .3s;
+    padding-right: 55px;
+    text-align:start;
+    position:relative;
+    padding-top: 35px;
+}
+.single-service h4{
+    text-transform: capitalize;
+    margin: 15px  15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.single-service:hover i{
+    border-radius: 50%;
+}
+.services-area{
+    padding-left: 40px;
+    text-align: right;
+}
+/*counter css*/
+.single-counter i{
+    background-color: #ff3636;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+.counter-area.pt-100.pb-100 {
+    background-color: #333;
+    color: #fff;
+}
+.single-counter h4{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.single-counter p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+/*experience css*/
+.timeline-list li .timeline-content {
+    width: 45%;
+    border: 2px solid #ff3636;
+    text-align: right;
+    padding: 20px;
+}
+.timeline-list li .timeline-content h4{
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.timeline-list li{
+    clear: both;
+    display: table;
+    position: relative;
+
+}
+.timeline-list li:nth-child(even) .timeline-content{
+    float:right;
+    text-align: left;
+}
+.timeline-list li::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ff3636;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.timeline-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.timeline-list li .timeline-content spam {
+    display: block;
+    font-size: 20px;
+    color: #ff3636;
+    font-weight: 600;
+}
+
+ul.timeline-list li .timeline-content {
+    width: 45%;
+    border: 2px solid #ff3636;
+    text-align: right;
+    padding: 20px;
+}
+.timeline-list::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ff3636;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+/*testimonials css*/
+.testimonials-area{
+    background-color: #333 ;
+    color: #fff ;
+
+}
+.single-testimonial{
+    text-align: center;
+}
+.single-testimonial img{
+    border-radius: 90%;
+}
+.single-testimonial p{
+    text-align: center;
+    margin-top: 20px;
+}
+client-info h4{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+client-info h4 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.owl-dots button{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.owl-dots{
+    text-align: center;
+}
+.price-area .btn-box{
+    background-color: aqua;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding:10px 30px ;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+.price-area{
+    background-color: #f4f4f4;
+}
+.single-price{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.single-price h5{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+single-price h2{
+    margin:20px 0;
+    background-color: #f4f4f4;
+    padding:10px;
+    font-size:4px;
+    font-weight: 700;
+}
+.single-price ul{
+    list-style: none;
+    padding:0;
+}
+.sigle-price ul li{
+    border-bottom:1px dashed #ddd;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    text-transform: capitalize;
+}
+.single-price ul li:last-child{
+    border-bottom: 0;
+}
+.single-price.active{
+    border: 3px solid cyan;
+}
+.single-price.active h2{
+    background-color: cyan;
+    color: #fff;
+}
