@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+
 /*common css*/
 .pt-100{
     padding-top: 100px;
@@ -7,73 +10,92 @@
     padding-bottom: 100px;
 }
 body{
-    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+
 }
+
 header{
     padding: 5px 0;
     position: absolute;
     left: 0;
     right: 0;
     z-index: 9;
-    background-color: aqua;
+  
+}
+.header a:hover{
+    color: burlywood;
 }
 .navbar-nav li a{
      color: #333;
      text-transform: capitalize;
-     font-size: 16px;
-     font-weight: 600;
+     font-size: 17px;
+     font-weight: 550;
+     padding: 0 10px important;
+     color: #fff;
 }
 .navbar-brand {
-    border: solid black;
-    padding: 12px 13px;
-    text-transform: uppercase;
     
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid #fff;
+    color: #fff;    
+}
+.banner-area:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: -7;
+    z-index: -11;
 }
 .banner-area{
     background-size: cover;
     background-position: center;
     position:relative;
-    z-index: 8;
+    z-index: 2;
     height: 100vh;
 }
+
 .banner h1{
     text-transform: capitalize;
     font-weight: 400;
     font-size: 60px;
-    font-family: 'Lobster', cursive;
+    color:#fff;
 }
 .banner h5{
-    font-family: 'Lobster', cursive;
+    color: #fff;
 }
-.banner-area .btn-box{
-    background-color: aqua;
+.banner a{
+    margin-top: 15px;
+}
+.btn-box{
+    background-color: burlywood;
     display: inline-block;
     color: black;
-    text-decoration: none;
-    text-transform: lowercase;
+    text-decoration: navajowhite;
+    text-transform:capitalize;
     padding:10px 30px ;
     font-weight: 600;
     font-size: 20px;
-    font-family: 'Lobster', cursive;
+    transition: 0.3s;
 }
-.about-area .btn-box{
-    background-color: aqua;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    text-transform: lowercase;
-    padding:10px 30px ;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: 'Lobster', cursive;
+.btn-box:hover{
+
+    color: #fff;
 }
+
 .about-content h3{
-    color: #ff3636;
+    color: burlywood;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 36px;
     line-height: 26px;
     padding-bottom:10px ;
+}
+.about-content .img-fluid{
+    border-radius: 50%;
 }
 .about-content ul{
     width: 30%;
@@ -87,7 +109,9 @@ header{
     text-transform: capitalize;
 }
 .services-area{
-    background-color: cyan;
+    background-color: burlywood;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .section-title h4{
     font-size: 36px;
@@ -99,9 +123,9 @@ header{
 .section-title ::before{
     content: "";
     position: absolute;
-    width: 70px;
-    height: 3px;
-    background-color: #ff3636;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -109,9 +133,9 @@ header{
 .section-title ::after{
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #ff3636;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
     border-radius: 50%;
     bottom: -6px;
     left: 50%;
@@ -123,12 +147,13 @@ header{
 .single-service{ 
     text-align: center;
     background-color: #fff;
-    padding: 30px;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 .single-service i{ 
     width: 15px;
     height: 80px;
-    background-color: #ff3636;
+    background-color: burlywood;
     padding: 30px;
     color: #fff;
     font-size: 30px;
@@ -140,6 +165,10 @@ header{
     text-align:start;
     position:relative;
     padding-top: 35px;
+}
+
+.single-service .btn-box{
+    background-color: white;
 }
 .single-service h4{
     text-transform: capitalize;
